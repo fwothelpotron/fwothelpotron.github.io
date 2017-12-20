@@ -65,6 +65,10 @@
     .table_class_4 { background-position: -80px top; }
     .table_class_5 { background-position: -100px top; }
 
+    .afn_icon { background-size: auto 100%; background-repeat: no-repeat; background-image: url('../img/fwothot_icons_afn.png'); cursor: default; }
+    .table_afn { width: 18px; height: 20px; display: inline-block; vertical-align: middle; }
+    .table_afn_1 { background-position: -18px top; }
+    .table_afn_2 { background-position: -36px top; }
 
     /* Text styles --------------------------------------------------- */
     .shadow_l { text-shadow: 3px 4px 0 #0f1a26, -2px -2px 0 #0f1a26, 2px -2px 0 #0f1a26, -2px 2px 0 #0f1a26, 2px 2px 0 #0f1a26; }

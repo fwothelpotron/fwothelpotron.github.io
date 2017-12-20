@@ -17,9 +17,10 @@ var user_data = JSON.parse(localStorage.getItem('user_data')) || {},
         'msc_tsk' : { '1' : [ 35, 23 ], '2' : [ 65, 40 ], '3' : [ 80, 54 ], '4' : [ 95, 60 ], '5' : [ 110, 73 ], '6' : [ 125, 85 ], '7' : [ 140, 93 ], '8' : [ 155, 105 ], '9' : [ 170, 112 ], '10' : [ 180, 119 ], '12' : [ 200, 130 ], '14' : [ 215, 143 ], '16' : [ 230, 150 ], '18' : [ 250, 164 ], '20' : [ 265, 176 ], '22' : [ 285, 187 ], '24' : [ 300, 195 ] },
         'lvl_cpl' : [ 0, 25, 50, 95, 150, 220, 305, 400, 515, 640, 780, 935, 1100, 1285, 1480, 1690, 1915, 2150, 2405, 2670, 2950, 3245, 3550, 3875, 4210, 4560, 4925, 5300, 5695, 6100 ],
         'lvl_ccv' : { 'kilo' : [ 25, 38 ], 'mega' : [ 40, 60 ], 'giga' : [ 170, 255 ], 'tera' : [ 410, 615 ], 'peta' : [ 970, 1455 ] },
-        'chr_map' : ['name', 'outfit', 'class', 'level', 'attack', 'id'],
+        'chr_map' : ['name', 'outfit', 'class', 'level', 'attack', 'id', '', 'afn'],
         'chr_cls' : [ [ 'Captain', '#ffe52c' ], [ 'Scientist', '#ff4d4d' ], [ 'Robot', '#009dfe' ], [ 'Delivery Boy', '#5efcc1' ], [ 'Influencer', '#ff7200' ], [ 'Villain', '#c238ff' ] ],
-        'chr_atk' : [ 'Throw', 'Melee', 'Shoot', 'N/A' ]
+        'chr_atk' : [ 'Throw', 'Melee', 'Shoot', 'N/A' ],
+        'chr_afn' : [ 'Brainy', 'Brave', 'Cool' ]
     };
 
 
@@ -167,7 +168,7 @@ function drawCharTable() {
                 var isGroup = chr_own_prv == work_data[value][0];
 
                 chr_own_txt += isGroup ? '' : (index == 0) ? '<div class="tbl_b">' : '</div><div class="tbl_b">';
-                chr_own_txt += '<div class="tbl_r"><div class="tbl_c">' + work_data[value][0] + (work_data[value][1] ? ' - ' + work_data[value][1] : '') + '</div><div class="tbl_c"><div title="' + game_data['chr_cls'][work_data[value][2]][0] + '" class="class_icon table_class table_class_' + work_data[value][2] + '"></div></div><div class="tbl_c level_char" data-id="' + value + '"><span>' + work_data[value][3] + '</span><div class="level_control"></div></div><div class="tbl_c">' + game_data['chr_atk'][work_data[value][4]] + '</div></div>';
+                chr_own_txt += '<div class="tbl_r"><div class="tbl_c">' + work_data[value][0] + (work_data[value][1] ? ' - ' + work_data[value][1] : '') + '</div><div class="tbl_c"><div title="' + game_data['chr_afn'][work_data[value][7]] + '" class="afn_icon table_afn table_afn_' + work_data[value][7] + '"></div></div><div class="tbl_c"><div title="' + game_data['chr_cls'][work_data[value][2]][0] + '" class="class_icon table_class table_class_' + work_data[value][2] + '"></div></div><div class="tbl_c level_char" data-id="' + value + '"><span>' + work_data[value][3] + '</span><div class="level_control"></div></div><div class="tbl_c">' + game_data['chr_atk'][work_data[value][4]] + '</div></div>';
 
                 chr_own_prv = work_data[value][0];
             }
@@ -190,7 +191,7 @@ function drawCharTable() {
                 var isGroup = chr_rst_prv == work_data[value][0];
 
                 chr_rst_txt += isGroup ? '' : (index == 0) ? '<div class="tbl_b">' : '</div><div class="tbl_b">';
-                chr_rst_txt += '<div class="tbl_r"><div class="tbl_c">' + work_data[value][0] + (work_data[value][1] ? ' - ' + work_data[value][1] : '') + '</div><div class="tbl_c"><div title="' + game_data['chr_cls'][work_data[value][2]][0] + '" class="class_icon table_class table_class_' + work_data[value][2] + '"></div></div><div class="tbl_c"><span>-</span></div><div class="tbl_c">' + game_data['chr_atk'][work_data[value][4]] + '</div></div>';
+                chr_rst_txt += '<div class="tbl_r"><div class="tbl_c">' + work_data[value][0] + (work_data[value][1] ? ' - ' + work_data[value][1] : '') + '</div><div class="tbl_c"><div title="' + game_data['chr_afn'][work_data[value][7]] + '" class="afn_icon table_afn table_afn_' + work_data[value][7] + '"></div></div><div class="tbl_c"><div title="' + game_data['chr_cls'][work_data[value][2]][0] + '" class="class_icon table_class table_class_' + work_data[value][2] + '"></div></div><div class="tbl_c"><span>-</span></div><div class="tbl_c">' + game_data['chr_atk'][work_data[value][4]] + '</div></div>';
 
                 chr_rst_prv = work_data[value][0];
             }

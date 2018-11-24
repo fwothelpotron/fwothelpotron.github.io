@@ -302,8 +302,8 @@
 
 		.controls label { flex: 1 0 26%; max-width: calc(100% / 4); }
 
-		/* #char_tbl_own .tbl_b:nth-child(2):before { content: ""; position: absolute; left: -3px; top: -15px; right: -6px; background-image: url('../img/fwothot_sc_01.svg'); background-repeat: no-repeat; background-size: 100% 34px; display: block; height: 34px; pointer-events: none; } */
-		#char_tbl_own .tbl_b:nth-child(2):before { content: ""; position: absolute; left: -2px; top: -26px; right: -2px; background-image: url('../img/fwothot_sc_02.svg'); background-repeat: no-repeat; background-size: 100% 34px; display: block; height: 34px; pointer-events: none; }
+		#char_tbl_own .tbl_b:nth-child(2):before { content: ""; position: absolute; left: -3px; top: -15px; right: -6px; background-image: url('../img/fwothot_sc_01.svg'); background-repeat: no-repeat; background-size: 100% 34px; display: block; height: 34px; pointer-events: none; }
+		/* #char_tbl_own .tbl_b:nth-child(2):before { content: ""; position: absolute; left: -2px; top: -26px; right: -2px; background-image: url('../img/fwothot_sc_02.svg'); background-repeat: no-repeat; background-size: 100% 34px; display: block; height: 34px; pointer-events: none; } */
 	}
 
 	@media all and (min-width: 720px) {
@@ -325,8 +325,8 @@
 		#tab_body_1.hasFilter:after { left: 85px; }
 		#tab_body_2.hasFilter:after { left: 95px; }
 
-		/* #tabs_body_main > div:before, #char_tbl_own .tbl_b:nth-child(2):before { content: ""; position: absolute; left: -5px; top: -15px; right: -8px; background-image: url('../img/fwothot_sc_01.svg'); background-repeat: no-repeat; background-size: 100% 34px; display: block; height: 34px; pointer-events: none; } */
-		#tabs_body_main > div:before, #char_tbl_own .tbl_b:nth-child(2):before { content: ""; position: absolute; left: -2px; top: -26px; right: -2px; background-image: url('../img/fwothot_sc_02.svg'); background-repeat: no-repeat; background-size: 100% 34px; display: block; height: 34px; pointer-events: none; }
+		#tabs_body_main > div:before, #char_tbl_own .tbl_b:nth-child(2):before { content: ""; position: absolute; left: -5px; top: -15px; right: -8px; background-image: url('../img/fwothot_sc_01.svg'); background-repeat: no-repeat; background-size: 100% 34px; display: block; height: 34px; pointer-events: none; }
+		/* #tabs_body_main > div:before, #char_tbl_own .tbl_b:nth-child(2):before { content: ""; position: absolute; left: -2px; top: -26px; right: -2px; background-image: url('../img/fwothot_sc_02.svg'); background-repeat: no-repeat; background-size: 100% 34px; display: block; height: 34px; pointer-events: none; } */
 	}
 
 	@media all and (max-width: 520px) {
